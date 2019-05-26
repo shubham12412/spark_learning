@@ -29,9 +29,12 @@
 
 #### Kafka spark streaming integration
 
+https://databricks.com/blog/2015/03/30/improvements-to-kafka-integration-of-spark-streaming.html
+
 https://blog.clairvoyantsoft.com/productionalizing-spark-streaming-applications-4d1c8711c7b0
 
 
 ![Kafka spark streaming integration](img/spark-direct-kafka-integration.png "Kafka spark streaming integration image")
 
 https://databricks.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-29-at-10.14.11-PM.png
+
