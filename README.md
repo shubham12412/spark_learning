@@ -24,3 +24,9 @@
 3) https://metabroadcast.com/blog/design-your-spark-streaming-cluster-carefully
 
 4) 
+
+
+
+#### Kafka spark streaming integration
+
+![Kafka spark streaming integration](img/spark-direct-kafka-integration.png "Kafka spark streaming integration image")
