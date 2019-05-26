@@ -20,3 +20,7 @@
 1) https://stackoverflow.com/questions/44590284/number-of-executors-in-spark-local-mode
 
 2) https://stackoverflow.com/questions/34701350/does-any-daemon-run-when-spark-is-in-local-mode?rq=1
+
+3) https://metabroadcast.com/blog/design-your-spark-streaming-cluster-carefully
+
+4) 
