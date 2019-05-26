@@ -11,3 +11,10 @@
 4) https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming.html
 
 5) https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming-kafka.html
+
+
+
+
+#### Question-Answers:
+
+1) https://stackoverflow.com/questions/44590284/number-of-executors-in-spark-local-mode
