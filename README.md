@@ -8,4 +8,5 @@
 
 3) https://spark.apache.org/docs/latest/submitting-applications.html
 
+4) https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming.html
 
