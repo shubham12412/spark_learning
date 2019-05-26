@@ -29,4 +29,7 @@
 
 #### Kafka spark streaming integration
 
+https://blog.clairvoyantsoft.com/productionalizing-spark-streaming-applications-4d1c8711c7b0
+
+
 ![Kafka spark streaming integration](img/spark-direct-kafka-integration.png "Kafka spark streaming integration image")
