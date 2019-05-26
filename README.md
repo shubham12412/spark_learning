@@ -33,3 +33,5 @@ https://blog.clairvoyantsoft.com/productionalizing-spark-streaming-applications-
 
 
 ![Kafka spark streaming integration](img/spark-direct-kafka-integration.png "Kafka spark streaming integration image")
+
+https://databricks.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-29-at-10.14.11-PM.png
