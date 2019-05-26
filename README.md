@@ -10,3 +10,4 @@
 
 4) https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming.html
 
+5) https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming-kafka.html
