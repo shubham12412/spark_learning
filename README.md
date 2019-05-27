@@ -56,3 +56,5 @@ https://stackoverflow.com/questions/41022367/set-spark-streaming-kafka-maxratepe
 
 https://stackoverflow.com/questions/36501651/kafka-topic-partition-and-spark-executor-mapping?rq=1
 
+https://stackoverflow.com/questions/37810709/kafka-topic-partitions-to-spark-streaming?rq=1
+
