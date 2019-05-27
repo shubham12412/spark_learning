@@ -31,6 +31,8 @@
 
 https://databricks.com/blog/2015/03/30/improvements-to-kafka-integration-of-spark-streaming.html
 
+https://databricks.com/blog/2015/07/08/new-visualizations-for-understanding-apache-spark-streaming-applications.html
+
 https://blog.clairvoyantsoft.com/productionalizing-spark-streaming-applications-4d1c8711c7b0
 
 https://github.com/koeninger/kafka-exactly-once/blob/master/blogpost.md
