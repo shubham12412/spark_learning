@@ -54,3 +54,5 @@ https://spark.apache.org/docs/latest/configuration.html
 
 https://stackoverflow.com/questions/41022367/set-spark-streaming-kafka-maxrateperpartition-for-createdirectstream
 
+https://stackoverflow.com/questions/36501651/kafka-topic-partition-and-spark-executor-mapping?rq=1
+
