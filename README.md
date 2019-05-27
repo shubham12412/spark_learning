@@ -52,3 +52,5 @@ https://stackoverflow.com/questions/42091843/spark-streaming-batch-interval-vs-p
 https://spark.apache.org/docs/latest/configuration.html
 
 
+https://stackoverflow.com/questions/41022367/set-spark-streaming-kafka-maxrateperpartition-for-createdirectstream
+
