@@ -60,3 +60,5 @@ https://stackoverflow.com/questions/36501651/kafka-topic-partition-and-spark-exe
 
 https://stackoverflow.com/questions/37810709/kafka-topic-partitions-to-spark-streaming?rq=1
 
+https://www.sigmoid.com/spark-streaming-internals/
+
