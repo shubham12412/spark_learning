@@ -45,3 +45,10 @@ https://github.com/koeninger/kafka-exactly-once/blob/master/blogpost.md
 https://databricks.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-29-at-10.14.11-PM.png
 
 http://spark.apache.org/docs/latest/streaming-kafka-integration.html
+
+https://stackoverflow.com/questions/42091843/spark-streaming-batch-interval-vs-processing-time?rq=1
+
+
+https://spark.apache.org/docs/latest/configuration.html
+
+
