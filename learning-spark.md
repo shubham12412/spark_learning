@@ -58,5 +58,52 @@ fault tolerance, throughput, and scalability
 
 
 
+For engineers, Spark provides a simple way to parallelize these applications across
+clusters, and hides the complexity of distributed systems programming, network
+communication, and fault tolerance.
+
+in-memory storage and efficient fault recovery
+
+Storage Layers for Spark
+
+Spark can create distributed datasets from any file stored in the Hadoop distributed
+filesystem (HDFS) or other storage systems supported by the Hadoop APIs (includ‐
+ing your local filesystem, Amazon S3, Cassandra, Hive, HBase, etc.). It’s important to
+remember that Spark does not require Hadoop; it simply has support for storage sys‐
+tems implementing the Hadoop APIs. Spark supports text files, SequenceFiles, Avro,
+Parquet, and any other Hadoop InputFormat.
+
+
+
+
+At a high level, every Spark application consists of a driver program that launches
+various parallel operations on a cluster. The driver program contains your applica‐
+tion’s main function and defines distributed datasets on the cluster, then applies oper‐
+ations to them. In the preceding examples, the driver program was the Spark shell
+itself, and you could just type in the operations you wanted to run.
+
+Driver programs access Spark through a SparkContext object, which represents a
+connection to a computing cluster. In the shell, a SparkContext is automatically
+created for you as the variable called sc.
+
+Once you have a SparkContext, you can use it to build RDDs. In Examples 2-1 and
+2-2, we called sc.textFile() to create an RDD representing the lines of text in a file.
+We can then run various operations on these lines, such as count() .
+
+To run these operations, driver programs typically manage a number of nodes called
+executors. For example, if we were running the count() operation on a cluster, differ‐
+ent machines might count lines in different ranges of the file. Because we just ran the
+Spark shell locally, it executed all its work on a single machine—but you can connect
+the same shell to a cluster to analyze data in parallel.
+
+
+
+
+
+While we will cover the Spark API in more detail later, a lot of its magic is that
+function-based operations like filter also parallelize across the cluster. That is,
+Spark automatically takes your function (e.g., line.contains("Python") ) and ships
+it to executor nodes. Thus, you can write code in a single driver program and auto‐
+matically have parts of it run on multiple nodes.
 
 
