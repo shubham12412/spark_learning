@@ -62,3 +62,12 @@ https://stackoverflow.com/questions/37810709/kafka-topic-partitions-to-spark-str
 
 https://www.sigmoid.com/spark-streaming-internals/
 
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+https://www.youtube.com/watch?v=7ooZ4S7Ay6Y&feature=youtu.be
+
+
