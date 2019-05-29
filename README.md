@@ -71,3 +71,17 @@ https://www.sigmoid.com/spark-streaming-internals/
 https://www.youtube.com/watch?v=7ooZ4S7Ay6Y&feature=youtu.be
 
 
+
+
+https://spark.apache.org/docs/latest/job-scheduling.html
+
+https://stackoverflow.com/questions/49568940/how-to-run-multiple-spark-jobs-in-parallel
+
+
+https://stackoverflow.com/questions/28712420/how-to-run-concurrent-jobsactions-in-apache-spark-using-single-spark-context
+
+https://stackoverflow.com/questions/23528006/how-jobs-are-assigned-to-executors-in-spark-streaming
+
+https://stackoverflow.com/questions/28712420/how-to-run-concurrent-jobsactions-in-apache-spark-using-single-spark-context
+
+
