@@ -79,3 +79,30 @@ A wide dependency (or wide transformation) style transformation will have input 
 ***You’ll see a lot of discussion about shuffle optimization across the web because it’s an important topic, but for now, all you need to understand is that there are two kinds of transformations. You now can see how transformations are simply ways of specifying different series of data manipulation. This leads us to a topic called lazy evaluation.***
 
 
+### Lazy Evaluation
+Lazy evaulation means that Spark will wait until the very last moment to execute the graph of computation instructions. In Spark, instead of modifying the data immediately when you express some operation, you build up a plan of transformations that you would like to apply to your source data. By waiting until the last minute to execute the code, Spark compiles this plan from your raw DataFrame transformations to a streamlined physical plan that will run as efficiently as possible across the cluster. This provides immense benefits because Spark can optimize the entire data flow from end to end. An example of this is something called predicate pushdown on DataFrames. If we build a large Spark job but specify a filter at the end that only requires us to fetch one row from our source data, the most efficient way to execute this is to access the single record that we need. Spark will actually optimize this for us by pushing the filter down automatically.
+
+------------------------------------------------------------------------------------------------------------------------
+
+### Actions
+***Transformations allow us to build up our logical transformation plan. To trigger the computation, we run an action. An action instructs Spark to compute a result from a series of transformations***. The simplest action is count, which gives us the total number of records in the DataFrame:
+
+divisBy2.count()
+
+The output of the preceding code should be 500. Of course, count is not the only action. There are three kinds of actions:
+
+1) Actions to view data in the console
+
+2) Actions to collect data to native objects in the respective language
+
+3) Actions to write to output data sources
+
+In specifying this action, we started a Spark job that runs our filter transformation (a narrow transformation), then an aggregation (a wide transformation) that performs the counts on a per partition basis, and then a collect, which brings our result to a native object in the respective language. You can see all of this by inspecting the Spark UI, a tool included in Spark with which you can monitor the Spark jobs running on a cluster.
+
+
+
+
+
+
+
+
