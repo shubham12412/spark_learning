@@ -37,3 +37,24 @@ Reading, sorting, and collecting a DataFrame
 The process of logical and physical DataFrame manipulation
 ![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0209.png)
 
+
+The entire DataFrame transformation flow
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0210.png)
+
+
+The Catalyst Optimizer
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0401.png)
+
+
+The structured API logical planning process
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0402.png)
+
+
+The physical planning process
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0403.png)
+
+
+
+
+
+
