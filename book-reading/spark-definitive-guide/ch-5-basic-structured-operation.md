@@ -69,4 +69,43 @@ In Spark, each row in a DataFrame is a single record. Spark represents this reco
 ### DataFrame Transformations
 
 
+***An advanced tip is to use asc_nulls_first, desc_nulls_first, asc_nulls_last, or desc_nulls_last to specify where you would like your null values to appear in an ordered DataFrame.***
+
+For optimization purposes, it’s sometimes advisable to sort within each partition before another set of transformations. You can use the sortWithinPartitions method to do this:
+
+// in Scala
+spark.read.format("json").load("/data/flight-data/json/*-summary.json")
+  .sortWithinPartitions("count")
+  
+  ----------------------------------------------------------------------------------------------------------------
+  
+  
+### Repartition and Coalesce
+Another important optimization opportunity is to partition the data according to some frequently filtered columns, which control the physical layout of data across the cluster including the partitioning scheme and the number of partitions.
+
+Repartition will incur a full shuffle of the data, regardless of whether one is necessary. This means that you should typically only repartition when the future number of partitions is greater than your current number of partitions or when you are looking to partition by a set of columns:
+
+Coalesce, on the other hand, will not incur a full shuffle and will try to combine partitions. This operation will shuffle your data into five partitions based on the destination country name, and then coalesce them (without a full shuffle):
+
+// in Scala
+df.repartition(5, col("DEST_COUNTRY_NAME")).coalesce(2)
+
+-------------------------------------------------------------------------------------------------------------------
+
+### Collecting Rows to the Driver
+
+Spark maintains the state of the cluster in the driver. There are times when you’ll want to collect some of your data to the driver in order to manipulate it on your local machine.
+
+
+Thus far, we did not explicitly define this operation. However, we used several different methods for doing so that are effectively all the same. collect gets all data from the entire DataFrame, take selects the first N rows, and show prints out a number of rows nicely.
+
+
+There’s an additional way of collecting rows to the driver in order to iterate over the entire dataset. The method toLocalIterator collects partitions to the driver as an iterator. This method allows you to iterate over the entire dataset partition-by-partition in a serial manner:
+
+
+#### WARNING
+Any collection of data to the driver can be a very expensive operation! If you have a large dataset and call collect, you can crash the driver. If you use toLocalIterator and have very large partitions, you can easily crash the driver node and lose the state of your application. This is also expensive because we can operate on a one-by-one basis, instead of running computation in parallel.
+
+
+
 
