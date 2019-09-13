@@ -132,6 +132,16 @@ We do not manipulate the physical data; instead, we configure physical execution
 
 
 
+--------------------------------------------------------------------------------------------------------------
+
+### DataFrames and SQL
+
+Spark can run the same transformations, regardless of the language, in the exact same way. You can express your business logic in SQL or DataFrames (either in R, Python, Scala, or Java) and Spark will compile that logic down to an underlying plan (that you can see in the explain plan) before actually executing your code. With Spark SQL, you can register any DataFrame as a table or view (a temporary table) and query it using pure SQL. There is no performance difference between writing SQL queries or writing DataFrame code, they both “compile” to the same underlying plan that we specify in DataFrame code
+
+----------------------------------------------------------------------------------------------------------------
+
+Naturally, we don’t always need to collect the data. We can also write it out to any data source that Spark supports. For instance, suppose we want to store the information in a database like PostgreSQL or write them out to another file.
+
 
 
 
