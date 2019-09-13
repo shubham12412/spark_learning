@@ -34,3 +34,6 @@ Reading, sorting, and collecting a DataFrame
 ![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0208.png)
 
 
+The process of logical and physical DataFrame manipulation
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0209.png)
+
