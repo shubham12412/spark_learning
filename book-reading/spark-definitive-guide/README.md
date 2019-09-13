@@ -25,3 +25,12 @@ A narrow dependency
 A wide dependency
 ![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0205.png)
 
+
+Reading a CSV file into a DataFrame and converting it to a local array or list of rows
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0207.png)
+
+
+Reading, sorting, and collecting a DataFrame
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0208.png)
+
+
