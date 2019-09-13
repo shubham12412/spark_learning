@@ -55,6 +55,9 @@ The physical planning process
 
 
 
+Different kinds of transformations
+![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0502.png)
+
 
 
 
