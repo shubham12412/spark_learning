@@ -24,3 +24,4 @@ A narrow dependency
 
 A wide dependency
 ![](https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/assets/spdg_0205.png)
+
